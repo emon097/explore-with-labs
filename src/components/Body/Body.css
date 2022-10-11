@@ -1,3 +1,18 @@
 .image{
     width: 150px;
 }
+.pc {
+    margin-left: 30px;
+}
+@media only screen and ( max-width:688px )
+{  
+    .device{
+        margin-left: 85px;
+        padding: 15px;
+        
+        
+    }
+    .image{
+    width: 150px;
+}
+ }

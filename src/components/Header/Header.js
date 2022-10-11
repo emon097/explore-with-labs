@@ -1,6 +1,6 @@
 import React from "react";
+import "./Header.css";
 import Lottie from "lottie-react";
-
 import quiz from "../quiz.json";
 import Body from "../Body/Body";
 import { useLoaderData } from "react-router-dom";
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-4 rounded-xl  bg-emerald-500 p-10 mr-28 ml-14 ">
+      <div className=" bg-emerald-500  md:p-10 mobile ">
         {data.map((body) => (
           <Body body={body} key={body.id}></Body>
         ))}

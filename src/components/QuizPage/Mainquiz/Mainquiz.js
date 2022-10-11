@@ -12,24 +12,34 @@ const Mainquiz = ({ quiestion }) => {
       </div>
       <div className="  ">
         <div>
-          <div>
-            <input type="radio" name="name" id="quiz" />
+          <div className="flex justify-center">
+            <input type="radio" name={id} id="quiz" />
             <label htmlFor="quiz">
               {" "}
               <p className="m-4"> A: {options[0]}</p>{" "}
             </label>
           </div>
-          <div>
-            <input type="radio" name="name" id="quiz2" />
+          <div className="flex justify-center">
+            <input type="radio" name={id} id="quiz2" />
             <label htmlFor="quiz2">
               {" "}
               <p className="m-4">B: {options[1]}</p>{" "}
             </label>
           </div>
-        </div>
-        <div>
-          <p className="m-4">C: {options[2]}</p>
-          <p className="m-4">D: {options[3]}</p>
+          <div className="flex justify-center">
+            <input type="radio" name={id} id="quiz3" />
+            <label htmlFor="quiz3">
+              {" "}
+              <p className="m-4">C: {options[2]}</p>{" "}
+            </label>
+          </div>
+          <div className="flex justify-center">
+            <input type="radio" name={id} id="quiz4" />
+            <label htmlFor="quiz4">
+              {" "}
+              <p className="m-4">D: {options[3]}</p>{" "}
+            </label>
+          </div>
         </div>
       </div>
     </div>
