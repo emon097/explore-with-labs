@@ -1,8 +1,18 @@
 import React from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Mainquiz = ({ quiestion }) => {
   const { correctAnswer, id, options, question } = quiestion;
-  console.log(quiestion);
+  console.log(correctAnswer);
+
+  const questionans = (id) => {
+    if (id === correctAnswer) {
+      toast("Wow so easy!");
+    } else {
+      toast("Can choose swipe direction");
+    }
+  };
+
   return (
     <div>
       <div className=" flex justify-center ">
@@ -12,36 +22,23 @@ const Mainquiz = ({ quiestion }) => {
       </div>
       <div className="  ">
         <div>
-          <div className="flex justify-center">
-            <input type="radio" name={id} id="quiz" />
-            <label htmlFor="quiz">
-              {" "}
-              <p className="m-4"> A: {options[0]}</p>{" "}
-            </label>
-          </div>
-          <div className="flex justify-center">
-            <input type="radio" name={id} id="quiz2" />
-            <label htmlFor="quiz2">
-              {" "}
-              <p className="m-4">B: {options[1]}</p>{" "}
-            </label>
-          </div>
-          <div className="flex justify-center">
-            <input type="radio" name={id} id="quiz3" />
-            <label htmlFor="quiz3">
-              {" "}
-              <p className="m-4">C: {options[2]}</p>{" "}
-            </label>
-          </div>
-          <div className="flex justify-center">
-            <input type="radio" name={id} id="quiz4" />
-            <label htmlFor="quiz4">
-              {" "}
-              <p className="m-4">D: {options[3]}</p>{" "}
-            </label>
-          </div>
+          {options.map((op) => (
+            <div className="flex justify-center">
+              <input
+                onClick={() => questionans(op)}
+                type="radio"
+                name={id}
+                id="quiz"
+              />
+              <label htmlFor="quiz">
+                {" "}
+                <p className="m-4"> {op}</p>{" "}
+              </label>
+            </div>
+          ))}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Qna from "./components/Qna/Qna";
 import Analysis from "./components/Analysis/Analysis";
 import Body from "./components/Body/Body";
 import QuizPage from "./components/QuizPage/QuizPage";
+import Error from "./components/Error/Error";
 function App() {
   const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ function App() {
           element: <Analysis></Analysis>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <Error></Error>,
     },
   ]);
   return (

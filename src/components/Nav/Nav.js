@@ -21,6 +21,7 @@ export const Nav = () => {
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
+                class=" tracking-wide text-gray-700 transition-colors font-bold duration-200 hover:text-deep-purple-accent-400"
                 className={({ isActive }) =>
                   isActive ? "activess" : undefined
                 }
@@ -53,7 +54,7 @@ export const Nav = () => {
                 to="/qna"
                 aria-label="About us"
                 title="About us"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                class="tracking-wide text-gray-700 transition-colors font-bold duration-200 hover:text-deep-purple-accent-400"
               >
                 Question Ans
               </NavLink>
@@ -115,7 +116,7 @@ export const Nav = () => {
                       title="Company"
                       class="inline-flex items-center"
                     >
-                      <span class="ml-2 text-xl text-teal-500 font-bold tracking-wide text-gray-800 uppercase">
+                      <span class="ml-2 text-xl text-teal-500 font-bold tracking-wide  uppercase">
                         Explore With Labs
                       </span>
                     </NavLink>
@@ -146,7 +147,7 @@ export const Nav = () => {
                         to="/ggg"
                         aria-label="Our product"
                         title="Our product"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        class="tracking-wide text-gray-700 transition-colors font-bold duration-200 hover:text-deep-purple-accent-400"
                       >
                         Home
                       </NavLink>
@@ -159,7 +160,7 @@ export const Nav = () => {
                         to="/analysis"
                         aria-label="Our product"
                         title="Our product"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        class="tracking-wide text-gray-700 transition-colors font-bold duration-200 hover:text-deep-purple-accent-400"
                       >
                         Quiz Feature Analysis
                       </NavLink>
@@ -173,7 +174,7 @@ export const Nav = () => {
                         to="/qna"
                         aria-label="About us"
                         title="About us"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        class="tracking-wide text-gray-700 transition-colors font-bold duration-200 hover:text-deep-purple-accent-400"
                       >
                         Question Ans
                       </NavLink>
