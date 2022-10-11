@@ -44,6 +44,7 @@ function App() {
         },
         {
           path: "/analysis",
+
           element: <Analysis></Analysis>,
         },
       ],

@@ -13,22 +13,21 @@ import {
 const data = [
   {
     name: "React",
-    Quiz: 8,
+    quiz: 8,
   },
   {
     name: "JavaScript",
-    Quiz: 9,
+    quiz: 9,
   },
   {
     name: "CSS",
-    Quiz: 8,
+    quiz: 8,
   },
   {
     name: "Git",
-    Quiz: 11,
+    quiz: 11,
   },
 ];
-
 export default function Analysis() {
   return (
     <div className="chart">
@@ -49,7 +48,7 @@ export default function Analysis() {
         <Tooltip />
         <Legend />
 
-        <Bar dataKey="Quiz" stackId="a" fill="#82ca9d" />
+        <Bar dataKey="quiz" stackId="a" fill="#82ca9d" />
       </BarChart>
     </div>
   );

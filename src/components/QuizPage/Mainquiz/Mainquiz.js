@@ -7,9 +7,9 @@ const Mainquiz = ({ quiestion }) => {
 
   const questionans = (id) => {
     if (id === correctAnswer) {
-      toast("Wow so easy!");
+      toast.success("This is Correct");
     } else {
-      toast("Can choose swipe direction");
+      toast.warning("This is Incorrect");
     }
   };
 
@@ -23,7 +23,7 @@ const Mainquiz = ({ quiestion }) => {
       <div className="  ">
         <div>
           {options.map((op) => (
-            <div className="flex justify-center">
+            <div className="flex border justify-center">
               <input
                 onClick={() => questionans(op)}
                 type="radio"
