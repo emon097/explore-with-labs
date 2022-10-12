@@ -14,7 +14,7 @@ const Body = ({ body }) => {
         to={`/body/${id}`}
         className="md:mr-30 mr-20 md:ml-16 pc hover:bg-indigo-600 text-white bg-indigo-700 ml-7 rounded-2xl p-2 font-semibold "
       >
-        Test YourSelf
+        Take Test
       </Link>
     </div>
   );
