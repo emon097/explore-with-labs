@@ -51,7 +51,7 @@ function App() {
     },
     {
       path: "*",
-      element: <div>erroe</div>,
+      element: <Error></Error>,
     },
   ]);
   return (
