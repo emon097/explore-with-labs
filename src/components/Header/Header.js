@@ -21,17 +21,16 @@ const Header = () => {
                 </p>
               </div>
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                The quick, brown fox
+                Take Your Test
                 <br className="hidden md:block" />
-                jumps over{" "}
+                And Grow Your{" "}
                 <span className="inline-block text-deep-purple-accent-400">
-                  a lazy dog
+                  Programming Knowledge
                 </span>
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+                If you know programming then it won't because you need to
+                understand that take a test here to see how much you know.
               </p>
             </div>
           </div>
