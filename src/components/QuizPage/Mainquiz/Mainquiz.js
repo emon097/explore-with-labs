@@ -23,7 +23,7 @@ const Mainquiz = ({ quiestion }) => {
       <div className=" flex justify-center ">
         <p className="bg-emerald-600 p-5 rounded-xl font-bold text-white m-6 w-80">
           <p className="left-10 bg-indigo-800 rounded p-2 m-6 ">
-            click here See Right Ans{" "}
+            Click To Here See Right Ans{" "}
             <FontAwesomeIcon
               className="ml-30"
               onClick={() => ringans(correctAnswer)}
@@ -34,18 +34,17 @@ const Mainquiz = ({ quiestion }) => {
         </p>
       </div>
 
-      <div className="  ">
+      <div>
         <div>
           {options.map((op) => (
-            <div className="flex items-center justify-center">
+            <div className="flex justify-center">
               <input
                 onClick={() => questionans(op)}
                 type="radio"
-                name={id}
+                name={`${id}`}
                 id="quiz"
-              />
+              />{" "}
               <label htmlFor="quiz">
-                {" "}
                 <p className="m-4"> {op}</p>{" "}
               </label>
             </div>

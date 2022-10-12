@@ -32,6 +32,10 @@ const data = [
 export default function Analysis() {
   return (
     <div className="chart">
+      <h1 className="md:text-3xl md:mb-6 md:font-bold bg-green-400 md:mr-36 md:ml-36 md:p-6 rounded-lg md:text-white   ">
+        {" "}
+        Number of Quiz and Quiz Topic{" "}
+      </h1>
       <ResponsiveContainer width="100%" height={500}>
         <BarChart
           data={data}
@@ -48,7 +52,7 @@ export default function Analysis() {
           <Tooltip />
           <Legend />
 
-          <Bar dataKey="quiz" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="quiz" stackId="a" fill="#82CA9D" />
         </BarChart>
       </ResponsiveContainer>
     </div>
