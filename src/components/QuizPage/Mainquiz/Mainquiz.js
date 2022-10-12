@@ -22,13 +22,18 @@ const Mainquiz = ({ quiestion }) => {
     <div>
       <div className=" flex justify-center ">
         <p className="bg-emerald-600 p-5 rounded-xl font-bold text-white m-6 w-80">
+          <p className="left-10 bg-indigo-800 rounded p-2 m-6 ">
+            click here See Right Ans{" "}
+            <FontAwesomeIcon
+              className="ml-30"
+              onClick={() => ringans(correctAnswer)}
+              icon={faEye}
+            ></FontAwesomeIcon>
+          </p>
           {question}
-          <FontAwesomeIcon
-            onClick={() => ringans(correctAnswer)}
-            icon={faEye}
-          ></FontAwesomeIcon>
         </p>
       </div>
+
       <div className="  ">
         <div>
           {options.map((op) => (
